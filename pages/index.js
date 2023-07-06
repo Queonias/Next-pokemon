@@ -1,5 +1,6 @@
 import styles from '@/styles/Home.module.css';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import Card from '../components/Card';
 
 export async function getStaticProps() {
@@ -22,6 +23,10 @@ export async function getStaticProps() {
 }
 
 export default function Home({ pokemons }) {
+  const router = useRouter();
+  if(router.isFallback) {
+    return <div>Carregando...</div>
+  }
   return (
     <>
       <div className={ styles.title_container }>
