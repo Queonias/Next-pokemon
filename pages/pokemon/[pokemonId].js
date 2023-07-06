@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/Pokemon.module.css";
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
   const maxPokemons = 1010;
   const api = "https://pokeapi.co/api/v2/pokemon/";
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async (context) => {
+export async function getStaticProps(context) {
   const api = "https://pokeapi.co/api/v2/pokemon/";
   const id = context.params.pokemonId;
   const res = await fetch(`${api}/${id}`);
