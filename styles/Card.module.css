@@ -11,7 +11,8 @@
     box-shadow: 5px 5px 12px;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
     background-color: #333;
-    color: #fff
+    color: #fff;
+    perspective: 1000px;
 }
 
 .card .id {
@@ -47,4 +48,24 @@
 }
 
 
+.card_image {
+    background-size: cover;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+  }
+
+  @keyframes movimento {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   
+  .card:hover .card_image {
+    animation: movimento 0.5s infinite;
+  }
