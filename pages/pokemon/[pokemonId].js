@@ -56,6 +56,7 @@ export default function Pokemon({ pokemon }) {
     <div className={ styles.pokemon_container }>
       <h1 className={ styles.title }>{pokemon.name}</h1>
       <Image
+        className={ styles.image }
         src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${formatNumber(
           pokemon.id
         )}.png`}

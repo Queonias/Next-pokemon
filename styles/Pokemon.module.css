@@ -125,3 +125,21 @@
   .data_height {
     border-right: 1px solid #ccc;
   }
+
+  /* Definindo a animação keyframes */
+@keyframes movimento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando a animação ao ícone */
+.image {
+  animation: movimento 0.5s infinite;
+}

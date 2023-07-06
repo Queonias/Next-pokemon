@@ -18,7 +18,7 @@ export default function Card({pokemon}) {
 
     return(
      <div className={ styles.card }>
-        <Image 
+        <Image
         src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${formatNumber(pokemon.id)}.png`} 
         alt="pokemon" 
         width="120" 
