@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h1>Pokédex - Aplicação Next.js</h1>
+  <h2>Funcionalidades</h2>
+  <ul>
+    <li>Listagem de pokémons com nome e imagem.</li>
+    <li>Detalhes de cada pokémon, incluindo número, tipo, altura e peso.</li>
+    <li>Navegação entre as páginas dos pokémons.</li>
+    <li>Consumo de dados de uma API externa.</li>
+  </ul>
+  <h2>Tecnologias Utilizadas</h2>
+  <ul>
+    <li>Next.js: um framework React que permite construir aplicativos web rápidos e escaláveis.</li>
+    <li>API externa: utilizamos uma API pública para obter dados sobre os pokémons.</li>
+  </ul>
+  <h2>Pré-requisitos</h2>
+  <p>Antes de executar a aplicação localmente, verifique se você possui as seguintes dependências instaladas:</p>
+  <ul>
+    <li>Node.js: versão 12 ou superior</li>
+    <li>npm: gerenciador de pacotes do Node.js</li>
+  </ul>
+  <h2>Como executar a aplicação localmente</h2>
+  <ol>
+    <li>Clone este repositório para o seu computador:</li>
+    <code>git clone https://github.com/seu-usuario/pokedex-next.git</code>
+    <li>Acesse o diretório do projeto:</li>
+    <code>cd pokedex-next</code>
+    <li>Instale as dependências do projeto:</li>
+    <code>npm install</code>
+    <li>Inicie a aplicação localmente:</li>
+    <code>npm run dev</code>
+    <li>Acesse a aplicação em seu navegador no endereço: <a href="http://localhost:3000">http://localhost:3000</a></li>
+  </ol>
+  <h2>Deploy e Demonstração</h2>
+  <p>A aplicação está hospedada em um serviço de deploy e pode ser acessada através do seguinte link: <a href="pokenext-ja0mjr1ti-queonias.vercel.app">Link da Demonstração</a></p>
+  <h2>Considerações Finais</h2>
+  <p>Esta aplicação de exemplo demonstra como criar uma Pokédex simples usando Next.js e consumindo dados de uma API externa. Sinta-se à vontade para explorar o código-fonte e personalizá-lo conforme suas necessidades.</p>
+  <p>Divirta-se explorando os pokémons! 🚀</p>
