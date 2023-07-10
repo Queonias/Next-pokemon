@@ -1,12 +1,11 @@
-import styles from '@/styles/Home.module.css';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import Card from '../components/Card';
+import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import Card from "../components/Card";
 
 export async function getStaticProps() {
-
   const maxPokemons = 1000;
-  const api = 'https://pokeapi.co/api/v2/pokemon/';
+  const api = "https://pokeapi.co/api/v2/pokemon/";
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
   const data = await res.json();
 
@@ -24,20 +23,27 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }) {
   const router = useRouter();
-  if(router.isFallback) {
-    return <div>Carregando...</div>
+  if (router.isFallback) {
+    return <div>Carregando...</div>;
   }
   return (
     <>
-      <div className={ styles.title_container }>
-        <h1 className={ styles.title }>Poke<span>Next</span></h1>
-        <Image src={`/images/pokeball.png`} width="50" height="50" alt='PokeNext'/>
+      <div className={styles.title_container}>
+        <h1 className={styles.title}>
+          Poke<span>Next</span>
+        </h1>
+        <Image
+          src={`/images/pokeball.png`}
+          width="50"
+          height="50"
+          alt="PokeNext"
+        />
       </div>
-      <div className={ styles.pokemon_container}>
-          {pokemons.map((pokemon) => (
-            <Card key={pokemon.id} pokemon={pokemon} />
-          ))}
+      <div className={styles.pokemon_container}>
+        {pokemons.map((pokemon) => (
+          <Card key={pokemon.id} pokemon={pokemon} />
+        ))}
       </div>
     </>
-  )
+  );
 }
