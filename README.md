@@ -30,7 +30,7 @@
     <li>Acesse a aplicação em seu navegador no endereço: <a href="http://localhost:3000">http://localhost:3000</a></li>
   </ol>
   <h2>Deploy e Demonstração</h2>
-  <p>A aplicação está hospedada em um serviço de deploy e pode ser acessada através do seguinte link: <a href="pokenext-kappa-ten.vercel.app">Link da Demonstração</a></p>
+  <p>A aplicação está hospedada em um serviço de deploy e pode ser acessada através do seguinte link: <a href="https://pokenext-kappa-ten.vercel.app/">Link da Demonstração</a></p>
   <h2>Considerações Finais</h2>
   <p>Esta aplicação de exemplo demonstra como criar uma Pokédex simples usando Next.js e consumindo dados de uma API externa. Sinta-se à vontade para explorar o código-fonte e personalizá-lo conforme suas necessidades.</p>
   <p>Divirta-se explorando os pokémons! 🚀</p>
